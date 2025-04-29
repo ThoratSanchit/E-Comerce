@@ -20,6 +20,7 @@ public class UserController {
     @PostMapping("/login")
     public String loginUser(@RequestBody User loginData) {
         User user = userService.loginUser(loginData.getEmail(), loginData.getPassword());
+
         return user != null ? "Login Successful" : "Invalid Email or Password";
     }
 }

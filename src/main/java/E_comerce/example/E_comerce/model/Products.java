@@ -18,4 +18,5 @@ public class Products {
     private double price;
     private int quantity;
     private String category;
+    private String url;
 }
