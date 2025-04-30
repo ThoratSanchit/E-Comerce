@@ -7,17 +7,20 @@ import E_comerce.example.E_comerce.model.Products;
 import E_comerce.example.E_comerce.repository.CartRepository;
 import E_comerce.example.E_comerce.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@RequiredArgsConstructor
+
 public class CartService {
 
-    private final CartRepository cartRepository;
-    private final ProductRepository productRepository;
+    @Autowired
+    private  CartRepository cartRepository;
+    @Autowired
+    private  ProductRepository productRepository;
 
     public Cart addToCart(String email, String productId) {
         Products product = productRepository.findById(productId)

@@ -7,17 +7,18 @@ import E_comerce.example.E_comerce.model.Products;
 import E_comerce.example.E_comerce.services.CartService;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/cart")
-@RequiredArgsConstructor
 
 public class CartController {
 
-    private final CartService cartService;
+    @Autowired
+    private  CartService cartService;
 
 
     @PostMapping("/add")
