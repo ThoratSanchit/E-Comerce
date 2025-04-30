@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://shopie-ease.netlify.app/", "https://yourproductiondomain.com")
+                        .allowedOrigins("https://shopie-ease.netlify.app", "https://yourproductiondomain.com")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true)
