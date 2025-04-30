@@ -11,4 +11,5 @@ public interface ProductService {
 
 //    Products createProduct(Products product);
     List<Products> searchProducts(String keyword);
+    List<Products> searchProductsByCategory(String keyword);
 }

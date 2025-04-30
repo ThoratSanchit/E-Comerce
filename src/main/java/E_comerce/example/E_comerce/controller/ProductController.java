@@ -53,4 +53,9 @@ public class ProductController {
         return productService.searchProducts(keyword);
     }
 
+
+    @GetMapping("/search-category")
+    public List<Products> SearchProductsByCategory(@RequestParam String keyword) {
+        return productService.searchProductsByCategory(keyword);
+    }
 }
