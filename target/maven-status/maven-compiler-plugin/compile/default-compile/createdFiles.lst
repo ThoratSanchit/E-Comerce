@@ -16,4 +16,5 @@ E_comerce\example\E_comerce\config\CorsConfig.class
 E_comerce\example\E_comerce\repository\UserRepository.class
 E_comerce\example\E_comerce\services\impl\ProductServiceImpl.class
 E_comerce\example\E_comerce\controller\CartController$UpdateRequest.class
+E_comerce\example\E_comerce\model\CartItem.class
 E_comerce\example\E_comerce\EComerceApplication.class
